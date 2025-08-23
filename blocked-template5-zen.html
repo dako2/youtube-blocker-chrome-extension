@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Blocked</title>
+    <style>
+        @keyframes ripple {
+            0% { transform: scale(0); opacity: 1; }
+            100% { transform: scale(4); opacity: 0; }
+        }
+        
+        @keyframes meditation {
+            0%, 100% { transform: translateY(0px) scale(1); }
+            50% { transform: translateY(-8px) scale(1.05); }
+        }
+        
+        @keyframes lotus {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(5deg); }
+        }
+        
+        @keyframes peaceful {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            background: radial-gradient(circle at center, #e8f5e8 0%, #d4e7d4 50%, #c1d9c1 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #2c5530;
+            position: relative;
+        }
+        
+        .ripple-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            pointer-events: none;
+        }
+        
+        .ripple {
+            position: absolute;
+            border: 2px solid rgba(44, 85, 48, 0.3);
+            border-radius: 50%;
+            animation: ripple 4s ease-out infinite;
+        }
+        
+        .ripple:nth-child(2) { animation-delay: 1s; }
+        .ripple:nth-child(3) { animation-delay: 2s; }
+        .ripple:nth-child(4) { animation-delay: 3s; }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 60px 50px;
+            border-radius: 50px;
+            box-shadow: 0 0 50px rgba(44, 85, 48, 0.1);
+            animation: peaceful 1.5s ease-out;
+            max-width: 500px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .icon {
+            font-size: 56px;
+            margin-bottom: 25px;
+            animation: meditation 6s ease-in-out infinite;
+        }
+        
+        .lotus {
+            font-size: 32px;
+            margin: 0 10px;
+            animation: lotus 8s ease-in-out infinite;
+            display: inline-block;
+        }
+        
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 25px;
+            color: #8b4513;
+            font-weight: normal;
+        }
+        
+        .subtitle {
+            font-size: 1.1em;
+            color: #556b2f;
+            margin-bottom: 35px;
+            line-height: 1.7;
+        }
+        
+        .motivational {
+            font-style: italic;
+            color: #6b8e23;
+            font-size: 1em;
+            border-top: 1px solid rgba(44, 85, 48, 0.2);
+            padding-top: 25px;
+            margin-top: 25px;
+        }
+        
+        .zen-symbols {
+            margin: 20px 0;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ripple-container">
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+    </div>
+    
+    <div class="container">
+        <div class="icon">🧘‍♂️</div>
+        <div class="zen-symbols">
+            <span class="lotus">🪷</span>
+            <span class="lotus">☯️</span>
+            <span class="lotus">🪷</span>
+        </div>
+        <h1>YouTube is Blocked</h1>
+        <p class="subtitle">Embrace this moment of stillness and find peace within yourself.</p>
+        <p class="motivational">"The best time to plant a tree was 20 years ago. The second best time is now."</p>
+    </div>
+</body>
+</html>

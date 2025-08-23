@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Blocker</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: 0;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        .status {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            backdrop-filter: blur(5px);
+        }
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .toggle-btn {
+            background: #ff4757;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .toggle-btn:hover {
+            background: #ff3742;
+        }
+        .toggle-btn.disabled {
+            background: #2ed573;
+        }
+        .toggle-btn.disabled:hover {
+            background: #26d467;
+        }
+        .info {
+            font-size: 0.9em;
+            opacity: 0.8;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="icon">🚫</div>
+        <h1>YouTube Blocker</h1>
+    </div>
+    
+    <div class="status">
+        <div class="status-indicator">
+            <span>YouTube blocking:</span>
+            <button id="toggleBtn" class="toggle-btn">ENABLED</button>
+        </div>
+    </div>
+    
+    <div class="info">
+        <p>This extension blocks access to YouTube to help you stay focused and productive.</p>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
