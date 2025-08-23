@@ -4,7 +4,7 @@ A simple Chrome extension that blocks access to YouTube to help you stay focused
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/00f4a5c4-6839-44a6-92e0-4af62a02b49c" />
 
-##Privacy Policy for YouTube Blocker – Focus & Self Care
+## Privacy Policy for YouTube Blocker – Focus & Self Care
 
 Last updated: August 2025
 
