@@ -2,6 +2,9 @@
 
 A simple Chrome extension that blocks access to YouTube to help you stay focused and productive.
 
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/00f4a5c4-6839-44a6-92e0-4af62a02b49c" />
+
+
 ## Features
 
 - Blocks all YouTube domains (youtube.com, www.youtube.com, m.youtube.com)
